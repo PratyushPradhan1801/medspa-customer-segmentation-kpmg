@@ -1,0 +1,4 @@
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+medspa_clustered_v2.xlsx
