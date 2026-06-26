@@ -200,6 +200,6 @@ medspa-customer-segmentation/
 
 ## Author
 
-**Pratyush Pradhan** . [GitHub](https://github.com/pratyushpradhan1801) . [LinkedIn](https://linkedin.com/in/your-handle) *(update this link)*
+**Pratyush Pradhan** . [GitHub](https://github.com/pratyushpradhan1801) . [LinkedIn]()
 
 *Built as a learning project. All data simulated.*
