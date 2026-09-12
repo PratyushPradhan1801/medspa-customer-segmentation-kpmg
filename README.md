@@ -1,22 +1,19 @@
 # Elevate MedSpa — Customer Segmentation & Marketing Audit
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pratyushpradhan1801/medspa-customer-segmentation/blob/main/MedSpa_Customer_Segmentation.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pratyushpradhan1801/medspa-customer-segmentation-kpmg/blob/main/MedSpa_Customer_Segmentation.ipynb)
 ![Python](https://img.shields.io/badge/Python-3.10+-blue)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-K--Means-orange)
 ![Power BI](https://img.shields.io/badge/Power%20BI-dashboard-yellow)
 ![Data](https://img.shields.io/badge/data-simulated-lightgrey)
 
 *An unsupervised machine-learning audit that segments 5,000 med-spa clients into behavioural cohorts, and uses them to show why a discount-led acquisition strategy is quietly losing money — with an honest read on what the data does and does not support.*
-
-![Elevate MedSpa — Power BI Dashboard](powerbi-dashboard.png)
-
 ---
 
 ## Overview
 
 **Elevate Aesthetics** is a premium medical spa (fictional, used here for demonstration) offering treatments such as laser therapy, CoolSculpting, and medical-grade facials priced between **$500 and $2,500**. A loyal client who visits quarterly is worth over **$4,000 a year**.
 
-The owner has been driving foot traffic with *"50% off your first treatment"* ads on Facebook and Groupon. The waiting room is full, but margins are thin. This project audits a simulated CRM export of 5,000 clients to test a single hypothesis: **the cheap-lead strategy is attracting the wrong customers.**
+The owner has been driving foot traffic with *"50% off your first treatment"* ads on Facebook and Groupon. The waiting room is full, but margins are thin. This project audits a simulated CRM export of 5,000 clients to test a single hypothesis: **the discount-led strategy is attracting predominantly low-retention customers.**
 
 The analysis lives in a Python notebook (K-Means segmentation) and an interactive Power BI dashboard.
 
@@ -161,8 +158,8 @@ Python . pandas . NumPy . scikit-learn . Plotly . Matplotlib . Power BI . Google
 
 **Run locally:**
 ```bash
-git clone https://github.com/pratyushpradhan1801/medspa-customer-segmentation.git
-cd medspa-customer-segmentation
+git clone https://github.com/pratyushpradhan1801/medspa-customer-segmentation-kpmg.git
+cd medspa-customer-segmentation-kpmg
 pip install -r requirements.txt
 jupyter notebook
 ```
@@ -172,14 +169,13 @@ jupyter notebook
 ## Project Structure
 
 ```
-medspa-customer-segmentation/
+medspa-customer-segmentation-kpmg/
 ├── README.md
 ├── requirements.txt
 ├── .gitignore
 ├── MedSpa_Customer_Segmentation.ipynb
-├── medspa_customer_cohorts.csv
+├── medspa_customers.csv
 ├── Final_MedSpa_Dashboard.pbix
-├── powerbi-dashboard.png
 ├── cluster-profile-heatmap.png
 ├── 3d-persona-map.png
 └── 3d-persona-map.html
