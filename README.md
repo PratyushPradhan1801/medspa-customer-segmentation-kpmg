@@ -174,7 +174,7 @@ medspa-customer-segmentation-kpmg/
 ├── requirements.txt
 ├── .gitignore
 ├── MedSpa_Customer_Segmentation.ipynb
-├── medspa_customers.csv
+├── medspa_customer_cohorts.csv
 ├── Final_MedSpa_Dashboard.pbix
 ├── cluster-profile-heatmap.png
 ├── 3d-persona-map.png
