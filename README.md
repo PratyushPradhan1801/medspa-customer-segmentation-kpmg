@@ -46,7 +46,7 @@ The clearest data-supported action is to **stop subsidising one-and-done discoun
 2. **Reallocate budget to organic and referral acquisition** (educational content, consultation funnels, referral incentives), which together produce ~87% of revenue at far higher retention.
 3. **Pivot from offer-led to authority-led marketing** — attract high-intent clients searching for expert treatment, not bargain hunters.
 
-**The cost, in round numbers.** The ~3,291 Facebook/Groupon one-timers contribute under **$1.3M** combined yet consume the bulk of ad spend, and ~90% never rebook. At a ~$30 CPA that is **~$99K** of acquisition cost chasing the lowest-value clients — before counting the margin erased by the 50%-off first visit. Redirecting even 60% of that budget into **referral incentives** (e.g. $50 per referred client) and **organic/content acquisition** targets the cohorts that actually retain (Organic ~97%, Referral ~70%).
+**The cost, in round numbers.** The ~3,291 Facebook/Groupon one-timers contribute under **$1.3M** combined yet consume the bulk of ad spend, and ~90% never rebook. At a **$30 CPA**, that is roughly **$99K** of acquisition cost chasing the lowest-value clients — before counting the margin erased by the 50%-off first visit. Redirecting even 60% of that budget into **referral incentives** (e.g. $50 per referred client) and **organic/content acquisition** targets the cohorts that actually retain (Organic ~97%, Referral ~70%).
 
 **A simple guardrail:** fund a channel only when projected **LTV:CAC clears ~3:1**. Organic clears it comfortably (~$7,050 LTV); discounted Facebook/Groupon (~$410 LTV) does not.
 
@@ -131,7 +131,7 @@ Open `3d-persona-map.html` in a browser to explore it interactively, or run the 
 
 ## Power BI Dashboard
 
-An interactive Power BI dashboard (shown at the top) accompanies the analysis, with slicers for gender, location, segment, acquisition source, and price sensitivity; KPI cards (revenue, customers, AOV, retention); and revenue / lead-volume / retention breakdowns by channel and cohort.
+An interactive Power BI dashboard accompanies the analysis, with slicers for gender, location, segment, acquisition source, and price sensitivity; KPI cards (revenue, customers, AOV, retention); and revenue / lead-volume / retention breakdowns by channel and cohort.
 
 - **File:** `Final_MedSpa_Dashboard.pbix` — open in Power BI Desktop to interact with the slicers.
 
@@ -170,11 +170,12 @@ jupyter notebook
 
 ```
 medspa-customer-segmentation-kpmg/
+├── data/
+│   └── medspa_customer_cohorts.csv
 ├── README.md
 ├── requirements.txt
 ├── .gitignore
 ├── MedSpa_Customer_Segmentation.ipynb
-├── medspa_customer_cohorts.csv
 ├── Final_MedSpa_Dashboard.pbix
 ├── cluster-profile-heatmap.png
 ├── 3d-persona-map.png
