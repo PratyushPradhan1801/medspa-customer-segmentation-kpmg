@@ -186,14 +186,11 @@ git clone https://github.com/pratyushpradhan1801/medspa-customer-segmentation-kp
 cd medspa-customer-segmentation-kpmg
 pip install -r requirements.txt
 jupyter notebook
+
 ```
-
-
----
 
 ## Project Structure
 
-```text
 medspa-customer-segmentation-kpmg/
 ├── data/
 │   └── medspa_customer_cohorts.csv
@@ -205,10 +202,10 @@ medspa-customer-segmentation-kpmg/
 ├── cluster-profile-heatmap.png
 ├── 3d-persona-map.png
 └── 3d-persona-map.html
+
 ```
 
----
-
+```
 ## Limitations & Future Work
 
 
@@ -218,12 +215,13 @@ medspa-customer-segmentation-kpmg/
 - **Demographics don't separate segments.** Age, gender, and location are near-uniform across cohorts, so any demographic-targeting claim is a hypothesis for A/B testing, not a finding.
 
 *Future work:* validate channel and demographic hypotheses with controlled tests; evaluate K-Prototypes or another mixed-data clustering approach; train a classifier to score new clients into a segment; and publish the dashboard as a shareable Power BI report.
-
+```
 ---
 
+```
 ## Author
-
 
 **Pratyush Pradhan** . [GitHub](https://github.com/pratyushpradhan1801) . [LinkedIn](https://www.linkedin.com/in/pratyush-pradhan1/)
 
 *Built as a learning project. All data simulated.*
+```
