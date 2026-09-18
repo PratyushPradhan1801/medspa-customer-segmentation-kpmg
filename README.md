@@ -127,13 +127,13 @@ A "churn / repeat" signal is **derived**, not given: a client is counted as *r
 
 The clearest view of the segmentation is the **cluster profile** — the average of each feature per segment (cell = actual value, colour = relative to other segments):
 
-[Cluster Profile Heatmap](https://github.com/PratyushPradhan1801/medspa-customer-segmentation-kpmg/blob/main/cluster-profile-heatmap.png) ([image](https://github.com/PratyushPradhan1801/medspa-customer-segmentation-kpmg/raw/main/cluster-profile-heatmap.png))
+![Cluster Profile Heatmap](./cluster-profile-heatmap.png)
 
 Glow Ke Nawab stands out in red on every feature; the two one-timer cohorts sit blue and low, separated almost entirely by acquisition channel.
 
 A 3D scatter (Income x Order Value x Session Duration) gives a complementary view:
 
-[3D Segment Map](https://github.com/PratyushPradhan1801/medspa-customer-segmentation-kpmg/blob/main/3d-persona-map.png) ([image](https://github.com/PratyushPradhan1801/medspa-customer-segmentation-kpmg/raw/main/3d-persona-map.png))
+![3D Segment Map](./3d-persona-map.png)
 
 Open `3d-persona-map.html` in a browser to explore it interactively, or run the notebook in Colab.
 
