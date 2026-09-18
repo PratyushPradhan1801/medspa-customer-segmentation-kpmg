@@ -1,16 +1,13 @@
 # Elevate MedSpa — Customer Segmentation & Marketing Audit
 
-[svg](https://github.com/PratyushPradhan1801/medspa-customer-segmentation-kpmg#elevate-medspa--customer-segmentation--marketing-audit)
 
 [Open In Colab](https://colab.research.google.com/github/pratyushpradhan1801/medspa-customer-segmentation-kpmg/blob/main/MedSpa_Customer_Segmentation.ipynb) ([image](https://camo.githubusercontent.com/eff96fda6b2e0fff8cdf2978f89d61aa434bb98c00453ae23dd0aab8d1451633/68747470733a2f2f636f6c61622e72657365617263682e676f6f676c652e636f6d2f6173736574732f636f6c61622d62616467652e737667)) [Python](https://camo.githubusercontent.com/fcdf47071178fa8539294173dc5716605fa3856c2ffc6fd9c2c31e1e742747be/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f507974686f6e2d332e31302b2d626c7565) [scikit-learn](https://camo.githubusercontent.com/2ac471bcd725c5cffba8809255f2871fa1caa9e3af364b2e8f8cc471e9b39955/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f7363696b69742d2d6c6561726e2d4b2d2d4d65616e732d6f72616e6765) [Power BI](https://camo.githubusercontent.com/841398e3f32aab5bae08e3c04fdef546660fd37197f64d05d5f4301d3d44a057/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f506f77657225323042492d64617368626f6172642d79656c6c6f77) [Data](https://camo.githubusercontent.com/70bb398a3c6306f54a16742d63a6cff2ee00147ba341ae1c1dafb521eef09710/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f646174612d73696d756c617465642d6c6967687467726579)
 
 ## *An unsupervised machine-learning audit that segments 5,000 med-spa clients into behavioural cohorts, and uses them to show why a discount-led acquisition strategy is quietly losing money — with an honest read on what the data does and does not support.*
 
-[svg](https://github.com/PratyushPradhan1801/medspa-customer-segmentation-kpmg#an-unsupervised-machine-learning-audit-that-segments-5000-med-spa-clients-into-behavioural-cohorts-and-uses-them-to-show-why-a-discount-led-acquisition-strategy-is-quietly-losing-money--with-an-honest-read-on-what-the-data-does-and-does-not-support)
 
 ## Overview
 
-[svg](https://github.com/PratyushPradhan1801/medspa-customer-segmentation-kpmg#overview)
 
 **Elevate Aesthetics** is a premium medical spa (fictional, used here for demonstration) offering treatments such as laser therapy, CoolSculpting, and medical-grade facials priced between **$500 and $2,500**. A loyal client who visits quarterly is worth over **$4,000 a year**.
 
@@ -24,7 +21,6 @@ The analysis lives in a Python notebook (K-Means segmentation) and an interactiv
 
 ## Key Findings
 
-[svg](https://github.com/PratyushPradhan1801/medspa-customer-segmentation-kpmg#key-findings)
 
 *Segment names are playful Hindi-English labels; each plain-English descriptor is in italics, with fuller profiles under *[*Customer Segments*](https://github.com/PratyushPradhan1801/medspa-customer-segmentation-kpmg#customer-segments)*.*
 
@@ -43,7 +39,6 @@ The analysis lives in a Python notebook (K-Means segmentation) and an interactiv
 
 ## Strategic Recommendation
 
-[svg](https://github.com/PratyushPradhan1801/medspa-customer-segmentation-kpmg#strategic-recommendation)
 
 The clearest data-supported action is to **stop subsidising one-and-done discount traffic and reinvest in the channels that retain.**
 
@@ -61,7 +56,6 @@ The clearest data-supported action is to **stop subsidising one-and-done discou
 
 ## Customer Segments
 
-[svg](https://github.com/PratyushPradhan1801/medspa-customer-segmentation-kpmg#customer-segments)
 
 > **Read this first.** The model clusters on **behavioural, financial, channel, and price-sensitivity features**. Segment *names are interpretive overlays.* The strongest separators are **acquisition channel, repeat behaviour, and order value** — the age/gender/location columns are roughly uniform across segments, so any demographic claim is a hypothesis to be tested, not a finding.
 
@@ -89,7 +83,6 @@ The clearest data-supported action is to **stop subsidising one-and-done discou
 
 ## Methodology
 
-[svg](https://github.com/PratyushPradhan1801/medspa-customer-segmentation-kpmg#methodology)
 
 1. **Data validation** — confirmed the 5,000-row export was complete (no nulls, no duplicate `Client_ID`s) across all 12 columns.
 2. **Feature selection** — five behavioural/financial signals (`Age`, `Income`, `Engagement_Time_Minutes`, `Purchase_Frequency`, `Average_Order_Value`) **plus** the two business-critical categoricals (`Acquisition_Source`, `Price_Sensitivity`), one-hot encoded.
@@ -105,11 +98,10 @@ The clearest data-supported action is to **stop subsidising one-and-done discou
 
 ## Dataset
 
-[svg](https://github.com/PratyushPradhan1801/medspa-customer-segmentation-kpmg#dataset)
 
 A simulated export of **5,000 med-spa clients x 12 columns**:
 
-| **ColumnTypeDescription** |       |                                                   |
+| **Column** | **Type** | **Description** |
 | ------------------------- | ----- | ------------------------------------------------- |
 | `Client_ID`               | str   | Unique client identifier                          |
 | `Age`                     | int   | Client age                                        |
@@ -123,6 +115,8 @@ A simulated export of **5,000 med-spa clients x 12 columns**:
 | `Price_Sensitivity`       | cat   | High / Medium / Low                               |
 | `Purchase_Frequency`      | int   | Visits in the period                              |
 | `Average_Order_Value`     | float | Mean spend per visit ($)                          |
+| `Cluster`                 | int   | K-Means cluster ID                               |
+| `Cluster_Name`            | str   | Human-readable segment label                     |
 
 A "churn / repeat" signal is **derived**, not given: a client is counted as *retained* when `Purchase_Frequency >= 2` (i.e. they came back at least once). This definition is stated explicitly so every retention figure is traceable to a formula.
 
@@ -130,7 +124,6 @@ A "churn / repeat" signal is **derived**, not given: a client is counted as *r
 
 ## Visualisations
 
-[svg](https://github.com/PratyushPradhan1801/medspa-customer-segmentation-kpmg#visualisations)
 
 The clearest view of the segmentation is the **cluster profile** — the average of each feature per segment (cell = actual value, colour = relative to other segments):
 
@@ -148,17 +141,24 @@ Open `3d-persona-map.html` in a browser to explore it interactively, or run th
 
 ## Power BI Dashboard
 
-[svg](https://github.com/PratyushPradhan1801/medspa-customer-segmentation-kpmg#power-bi-dashboard)
+An interactive Power BI dashboard accompanies the analysis, with slicers for gender, location, segment, acquisition source, and price sensitivity; KPI cards for revenue, customers, AOV, retention, and churn; and revenue / lead-volume / retention breakdowns by channel and cohort.
 
-An interactive Power BI dashboard accompanies the analysis, with slicers for gender, location, segment, acquisition source, and price sensitivity; KPI cards (revenue, customers, AOV, retention); and revenue / lead-volume / retention breakdowns by channel and cohort.
+The dashboard is synced with the refined GitHub CSV and currently reports:
 
-- **File:** `Final_MedSpa_Dashboard.pbix` — open in Power BI Desktop to interact with the slicers.
+- **Total Revenue:** $10.54M
+- **Customers:** 5,000
+- **Average Order Value:** $774.23
+- **Retention Rate:** 35.38%
+- **Churn Rate:** 64.62%
+
+The cluster revenue and retention visuals use the same final segment assignments as the notebook and GitHub dataset.
+
+- **Power BI file:** the `.pbix` dashboard file is included in the repository root.
 
 ---
 
 ## Skills Demonstrated
 
-[svg](https://github.com/PratyushPradhan1801/medspa-customer-segmentation-kpmg#skills-demonstrated)
 
 - Data validation, feature encoding, standardisation, and cluster profiling
 - Unsupervised ML (K-Means) with elbow + silhouette validation
@@ -169,7 +169,6 @@ An interactive Power BI dashboard accompanies the analysis, with slicers for gen
 
 ## Tech Stack
 
-[svg](https://github.com/PratyushPradhan1801/medspa-customer-segmentation-kpmg#tech-stack)
 
 Python . pandas . NumPy . scikit-learn . Plotly . Matplotlib . Power BI . Google Colab
 
@@ -177,7 +176,6 @@ Python . pandas . NumPy . scikit-learn . Plotly . Matplotlib . Power BI . Google
 
 ## Getting Started
 
-[svg](https://github.com/PratyushPradhan1801/medspa-customer-segmentation-kpmg#getting-started)
 
 **Run in Google Colab (recommended):** use the badge at the top of this page.
 
@@ -190,15 +188,12 @@ pip install -r requirements.txt
 jupyter notebook
 ```
 
-**svg**
 
 ---
 
 ## Project Structure
 
-[svg](https://github.com/PratyushPradhan1801/medspa-customer-segmentation-kpmg#project-structure)
-
-```
+```text
 medspa-customer-segmentation-kpmg/
 ├── data/
 │   └── medspa_customer_cohorts.csv
@@ -206,20 +201,16 @@ medspa-customer-segmentation-kpmg/
 ├── requirements.txt
 ├── .gitignore
 ├── MedSpa_Customer_Segmentation.ipynb
-├── [current Power BI dashboard file]
+├── Power BI dashboard (.pbix)
 ├── cluster-profile-heatmap.png
 ├── 3d-persona-map.png
 └── 3d-persona-map.html
-
 ```
-
-**svg**
 
 ---
 
 ## Limitations & Future Work
 
-[svg](https://github.com/PratyushPradhan1801/medspa-customer-segmentation-kpmg#limitations--future-work)
 
 - **Simulated data, stated conclusion.** The data is synthetic and the case brief pre-states the expected outcome, so this project showcases the *workflow and communication*, not an independent discovery.
 - **Retention is a proxy.** It means a repeat purchase (`Purchase_Frequency >= 2`), not time-windowed cohort retention (which would need visit timestamps).
@@ -232,7 +223,6 @@ medspa-customer-segmentation-kpmg/
 
 ## Author
 
-[svg](https://github.com/PratyushPradhan1801/medspa-customer-segmentation-kpmg#author)
 
 **Pratyush Pradhan** . [GitHub](https://github.com/pratyushpradhan1801) . [LinkedIn](https://www.linkedin.com/in/pratyush-pradhan1/)
 
