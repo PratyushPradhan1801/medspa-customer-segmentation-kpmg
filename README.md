@@ -202,11 +202,8 @@ medspa-customer-segmentation-kpmg/
 ├── cluster-profile-heatmap.png
 ├── 3d-persona-map.png
 └── 3d-persona-map.html
-
 ```
-
 ```
-
 ## Limitations & Future Work
 
 
@@ -218,7 +215,6 @@ medspa-customer-segmentation-kpmg/
 *Future work:* validate channel and demographic hypotheses with controlled tests; evaluate K-Prototypes or another mixed-data clustering approach; train a classifier to score new clients into a segment; and publish the dashboard as a shareable Power BI report.
 
 ```
-
 ```
 
 ## Author
@@ -226,5 +222,4 @@ medspa-customer-segmentation-kpmg/
 **Pratyush Pradhan** . [GitHub](https://github.com/pratyushpradhan1801) . [LinkedIn](https://www.linkedin.com/in/pratyush-pradhan1/)
 
 *Built as a learning project. All data simulated.*
-
 ```
